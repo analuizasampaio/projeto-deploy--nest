@@ -43,9 +43,14 @@ export class UserController {
     }
   }
 
+  // @Get()
+  // async listUsers() {
+  //   return await this.userService.listUsers();
+  // }
+
   @Get()
-  async listUsers() {
-    return await this.userService.listUsers();
+  async getHello(): Promise<string> {
+    return 'Hello World';
   }
 
   @Put(':id')
